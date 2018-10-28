@@ -1,0 +1,303 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Helvetica, sans-serif;
+}
+
+.left-panel {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  z-index: 2;
+  background-color: #fff;
+  background-size: cover;
+}
+
+.left-panel nav {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left-panel nav .logo {
+  widows: 50px;
+  height: 50px;
+  margin: auto;
+  padding: 10px;
+}
+
+.left-panel nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.left-panel nav ul li {
+  width: 100%;
+  height: 25px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left-panel nav ul li:hover {
+  color: #0099ff;
+}
+
+.left-panel nav ul li a {
+  width: 100%;
+  color: #666;
+  text-align: center;
+  text-decoration: none;
+}
+
+.left-panel nav ul li a:hover {
+  color: #0099ff;
+}
+
+.left-panel nav ul .active {
+  border-bottom: 2px solid #0099ff;
+  font-weight: bold;
+}
+
+.left-panel nav ul .active a {
+  color: #0099ff;
+}
+
+.left-panel nav svg {
+  display: none;
+  padding: 10px;
+}
+
+.left-panel nav .mobile-menu {
+  display: none;
+}
+
+.left-panel section {
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.left-panel section h1 {
+  width: 100%;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.left-panel section p {
+  margin: 0 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+}
+
+.left-panel section .forgot {
+  width: 100%;
+}
+
+.left-panel section .forgot a {
+  margin: auto;
+  margin-top: 25px;
+  color: #777;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.left-panel section .radius {
+  width: 150%;
+  height: 58px;
+  margin: 10px;
+  border-radius: 29px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 50px 0px grey;
+          box-shadow: 0px 0px 50px 0px grey;
+}
+
+.left-panel section .radius form {
+  width: 110%;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left-panel section .radius form svg {
+  margin: 4px 20px 2px 20px;
+}
+
+.left-panel section .radius form input {
+  width: 80%;
+  height: 58px;
+  border: 0px solid;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.left-panel section .radius form button {
+  width: 200px;
+  height: 50px;
+  margin: 4px;
+  border: 0px solid;
+  border-radius: 29px;
+  text-align: center;
+  background-color: #66ffe0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.right-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  z-index: 1;
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 410px) {
+  .left-panel section .radius form svg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 4px 10px;
+  }
+  .left-panel section .radius form input {
+    margin-left: 5px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .left-panel {
+    background-image: url("../img/Group.svg");
+  }
+  .left-panel nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .left-panel nav .back-color {
+    width: 100%;
+    height: 100%;
+    background-color: #CCFFF4;
+    z-index: 2;
+  }
+  .left-panel nav svg {
+    margin: auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 0;
+    z-index: 2;
+    background-color: #CCFFF4;
+  }
+  .left-panel nav .logo {
+    margin: auto 0;
+    z-index: 2;
+    background-color: #CCFFF4;
+  }
+  .left-panel nav ul {
+    display: none;
+  }
+  .left-panel nav .mobile-menu {
+    z-index: 1;
+    background-color: #fff;
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: fixed;
+    margin-top: 70px;
+    width: 100%;
+  }
+  .left-panel nav .mobile-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .left-panel nav .mobile-menu ul li {
+    margin: 20px;
+    text-transform: uppercase;
+  }
+  .left-panel nav .mobile-menu ul li .active {
+    border-bottom: none;
+    color: #0099ff;
+    font-weight: bold;
+  }
+  .left-panel section div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+  }
+  .left-panel section div p {
+    margin: 0 auto;
+  }
+  .left-panel section h1 {
+    text-align: center;
+  }
+  .left-panel section .radius {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 120px;
+  }
+  .left-panel section .radius form {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .left-panel section .radius form input {
+    width: 70%;
+  }
+  .left-panel section .radius form button {
+    margin: 40px auto;
+  }
+  .right-panel {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
